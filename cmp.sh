@@ -8,4 +8,5 @@
 #!/bin/fish
 gcc -g -Wall -c -o ./libs/slwa/obj/main.o main.c #so, write here instead 'main.c' name of your main-c file
 gcc -g -Wall -c -o ./libs/slwa/obj/slwa_arrwork.o ./libs/slwa/lib/slwa_arrwork.c #cd to libfiles for compile using libfiles in .o files
-gcc -g -Wall -o ./out/main ./libs/slwa/obj/slwa_arrwork.o ./libs/slwa/obj/main.o
+gcc -g -Wall -c -o ./libs/slwa/obj/sterr-handler.o ./libs/sterr-handler/sterr-handler.c #cd to libfiles for compile using libfiles in .o files
+gcc -g -Wall -o ./out/main ./libs/slwa/obj/slwa_arrwork.o ./libs/slwa/obj/sterr-handler.o ./libs/slwa/obj/main.o
